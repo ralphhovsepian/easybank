@@ -1,0 +1,99 @@
+//Primary Colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+//Neutral Colors
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 250px;
+  max-height: max-content;
+  background-color: $DarkBlue;
+  color: $White;
+  align-items: center;
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    span {
+      margin: 5px;
+      cursor: pointer;
+    }
+    span:hover {
+      color: $LimeGreen;
+    }
+    div {
+      margin: 10px;
+    }
+  }
+  .second {
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    li {
+      margin: 20px;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    li:hover {
+      color: $LimeGreen;
+    }
+  }
+  .third {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    button {
+      border: 0;
+      border-bottom: 0;
+      border-top: 0;
+      border-radius: 50px;
+      color: $White;
+      padding: 5%;
+      background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+    p {
+      margin: 20px 0;
+      font-weight: 300;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .second {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    div {
+      margin: 10px;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .second {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    div {
+      margin: 0;
+    }
+  }
+}

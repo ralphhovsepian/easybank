@@ -1,0 +1,66 @@
+.Articles {
+  padding: 5% 0;
+  background-color: #f3f4f6;
+  width: 100%;
+}
+
+.Articles h1 {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #2d314d;
+}
+
+.Articles .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Articles .article .art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 230px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Articles .article .art img {
+  width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.Articles .article .art h3 {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #2d314d;
+}
+
+.Articles .article .art p {
+  padding: 10px;
+  font-size: 15px;
+  color: #9698a6;
+}
+
+.Articles .article h3:hover {
+  color: #31d35c;
+}
+/*# sourceMappingURL=Articles.css.map */

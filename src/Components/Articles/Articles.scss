@@ -1,0 +1,60 @@
+//Primary Colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+//Neutral Colors
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+.Articles {
+  padding: 5% 0;
+  background-color: $LightGrayishBlue;
+  width: 100%;
+  h1 {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    color: $DarkBlue;
+  }
+  .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    .art {
+      display: flex;
+      flex-direction: column;
+
+      width: 230px;
+
+      background-color: $White;
+      margin: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      h3 {
+        padding: 10px;
+        font-size: 25px;
+        font-weight: 400;
+        color: $DarkBlue;
+      }
+      p {
+        padding: 10px;
+        font-size: 15px;
+        color: $GrayishBlue;
+      }
+    }
+    h3:hover {
+      color: $LimeGreen;
+    }
+  }
+}

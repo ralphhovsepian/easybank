@@ -1,0 +1,75 @@
+//Primary Colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+//Neutral Colors
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .left {
+    width: 50%;
+    margin-top: 10%;
+    h1 {
+      color: $DarkBlue;
+      font-size: 45px;
+      font-weight: 400;
+    }
+    p {
+      color: $GrayishBlue;
+    }
+    button {
+      margin: 10px 0;
+      border: 0;
+      color: $White;
+      font-weight: 700;
+      background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+      border-radius: 50px;
+      border-bottom: 0;
+      border-top: 0;
+      padding: 3%;
+      cursor: pointer;
+      outline: none;
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .left {
+    margin: 0 10%;
+  }
+  .right {
+    width: 40%;
+    background-image: url('../design/bgintrodesktop.svg');
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Header {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .left {
+    margin: 0 auto;
+  }
+  .right {
+    width: 100%;
+    background-image: url('../design/bgintrodesktop.svg');
+    img {
+      width: 100%;
+    }
+  }
+}

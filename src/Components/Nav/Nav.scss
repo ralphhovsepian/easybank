@@ -1,0 +1,110 @@
+//Primary Colors
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+
+//Neutral Colors
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+.Nav {
+  nav {
+    ul {
+      background-color: $White;
+      width: 100%;
+      min-height: 70px;
+      max-height: max-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      list-style: none;
+      // position: fixed;
+      li {
+        cursor: pointer;
+      }
+      .pages {
+        li:hover {
+          color: $DarkBlue;
+          border-bottom: 4px solid $LimeGreen;
+          padding-bottom: 10px;
+        }
+      }
+      .request {
+        border: 0;
+        border-bottom: 0;
+        border-top: 0;
+        border-radius: 50px;
+        padding: 5% 10%;
+        background-image: linear-gradient(to right, $LimeGreen, $BrightCyan);
+        font-weight: 400;
+        color: $White;
+        cursor: pointer;
+        outline: none;
+      }
+      .request:hover {
+        opacity: 0.5;
+      }
+      .pages {
+        display: flex;
+        flex-direction: row;
+        li {
+          margin-left: 15px;
+          color: $GrayishBlue;
+        }
+      }
+    }
+  }
+  .mobileNav {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Nav {
+    .desktopNav {
+      display: none;
+    }
+    .mobileNav {
+      display: flex;
+      ul {
+        justify-content: space-between;
+        margin: 10px;
+      }
+    }
+    .mobileMenu {
+      background-color: $White;
+      width: 50%;
+      border-radius: 5px;
+      border: 3px solid $LightGrayishBlue;
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: auto;
+      margin: auto;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        color: $GrayishBlue;
+
+        li {
+          margin: 10px;
+          cursor: pointer;
+        }
+        li:hover {
+          color: $DarkBlue;
+        }
+      }
+    }
+  }
+}

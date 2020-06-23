@@ -1,0 +1,82 @@
+.Header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Header .left {
+  width: 50%;
+  margin-top: 10%;
+}
+
+.Header .left h1 {
+  color: #2d314d;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.Header .left p {
+  color: #9698a6;
+}
+
+.Header .left button {
+  margin: 10px 0;
+  border: 0;
+  color: white;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 50px;
+  border-bottom: 0;
+  border-top: 0;
+  padding: 3%;
+  cursor: pointer;
+  outline: none;
+}
+
+.Header .left button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 701px) {
+  .left {
+    margin: 0 10%;
+  }
+  .right {
+    width: 40%;
+    background-image: url("../design/bgintrodesktop.svg");
+  }
+  .right img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left {
+    margin: 0 auto;
+  }
+  .right {
+    width: 100%;
+    background-image: url("../design/bgintrodesktop.svg");
+  }
+  .right img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Header.css.map */
